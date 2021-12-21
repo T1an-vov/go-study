@@ -1,13 +1,13 @@
 使用了gin+gorm框架，在本地8080端口测试
 
-
+//
 各包说明：
     dao：连接数据库并用自动迁移创建了users、courses、records三个表
     service:对应三个的服务，实现对users、courses、records的增删查改。
     controller:对应三个服务的控制器，并对service返回的结果进行处理，返回json
     module:定义了user、course、record三个模板
     router:定义了分组路由
-
+//
 
 各个接口说明：
   user:
@@ -24,6 +24,7 @@
     DELETE:传入参数为username，删除对应的用户
            若用户不存在，则删除失败
            成功则删除用户
+           //
  course:
     localhost/course/
     GET:传入参数为coursename
@@ -38,6 +39,7 @@
     DELETE:传入参数为coursename
            若课程不存在 ，则删除失败
            存在则删除课程
+           //
  record:
     localhost/record/
     GET:传入参数为username
@@ -49,7 +51,7 @@
     DELETE:传入参数为username和coursename，表示删除用户的选课记录。
            若该记录不存在，则删除失败
            成功则删除记录，同时修改用户学分和课程选课人数
-    
+           //
 
 //
 
