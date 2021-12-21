@@ -11,7 +11,7 @@
 
 各个接口说明：
   user:
-    localhost/user/
+    localhost:8080/user/
     GET:传入参数为username
         若用户不存在，则查询失败
         查询成功则输出用户的当前学分和最大学分
@@ -25,7 +25,7 @@
            若用户不存在，则删除失败
            成功则删除用户
  course:
-    localhost/course/
+    localhost:8080/course/
     GET:传入参数为coursename
         若课程不存在则查询失败
         查询成功输出课程信息
@@ -39,7 +39,7 @@
            若课程不存在 ，则删除失败
            存在则删除课程
  record:
-    localhost/record/
+    localhost:8080/record/
     GET:传入参数为username
         若该用户不存在选课记录则查询失败
         查询成功则输出选课信息
