@@ -5,7 +5,7 @@
     dao：连接数据库并用自动迁移创建了users、courses、records三个表
 	
     service:对应三个的服务，实现对users、courses、records的增删查改
-	。
+	
     controller:对应三个服务的控制器，并对service返回的结果进行处理，返回json
 	
     module:定义了user、course、record三个模板
