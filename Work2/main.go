@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-	//var CpuData = []float64{}
 	file,err:=os.Open("top.txt")
 	if err != nil {
 		fmt.Println("open failed")
